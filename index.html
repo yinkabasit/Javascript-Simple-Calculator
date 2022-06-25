@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const number1 = parseFloat(prompt("Enter First Number :"));
+      const operator = prompt("Enter opeartor (+,-,/,*)");
+      const number2 = parseFloat(prompt("Enter Second Number:"));
+
+      let print = 0;
+      if (isNaN(number1) || isNaN(number2)) {
+        alert("Wrong Input! Refresh");
+      } else {
+        if (operator == "+") {
+          print = number1 + number2;
+        } else if (operator == "-") {
+          print = number1 - number2;
+        } else if (operator == "*") {
+          print = number1 * number2;
+        } else if (operator == "/") {
+          print = number1 / number2;
+        }
+      }
+      alert(number1 + operator + number2 + " =" + print);
+    </script>
+  </body>
+</html>
